@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        div#area{
+            font: normal 20pt Arial;
+            background-color: blueviolet;
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+        div#mudou{
+            font: normal 20pt Arial;
+            background-color: rgb(103, 31, 170);
+            color: white;
+            width: 150px;
+            height: 150px;
+            line-height: 150px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="area">
+        Interaja...
+    </div>
+    <script>
+        //para ver todos eventos: event reference (mbn)
+        // mouseenter(entrou na div)
+        // mousemove(movendo dentro da div)
+        // mousedown(quando clica e segura)
+        // mouseup(quando solta o click)
+        // click(click normal)
+        // mouseout(quando mouse sai da div)
+        var a = window.document.getElementById('area');
+        a.addEventListener('click', clicar);
+        a.addEventListener('mouseenter', entrar);
+        a.addEventListener('mouseout', sair);
+
+        function clicar(){
+            a.innerText='clicou';
+            a.style.background='red';
+        }
+        function entrar(){
+            a.innerText='entrou';
+            a.style.background='green';
+        }
+        function sair() {
+            a.innerText='saiu';
+            a.style.background='blue';
+        }
+    </script>
+</body>
+</html>

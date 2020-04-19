@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tratamento de Dados</title>
+    <style>
+
+        body{
+            background-color: azure;
+            color: #333;
+            font: normal 20pt Arial;
+        }
+        h1{
+            color: black;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Olá, Mundo!</h1>
+    <p>Já me livrei da maldição!</p>
+    <script>
+
+        var n1 = window.prompt('Digite um número');
+        var n2 = window.prompt('Digite um número');
+        var s = Number.parseFloat(n1) + Number.parseFloat(n2); 
+        //parseInt(n) e Number(n) (o js decide o tipo de numero)
+        //String(n) ou n.toString() - converter em string
+        window.alert(`A soma entre ${n1} e ${n2} é ${s}`);
+        //number + number = adição
+        //string + string = concatenação
+        //s.length tamanho da string
+        //s.toUpperCase()  MAÍUSCULAS
+        //s.toLowerCase()  MÍNUSCULAS
+    </script>
+</body>
+</html>

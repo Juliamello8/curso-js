@@ -1,0 +1,3 @@
+<script>
+windonw.prompt()
+</script>
