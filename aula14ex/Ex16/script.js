@@ -4,6 +4,7 @@ function Contar(){
     let fim = document.getElementById('fim');
     let pas = document.getElementById('passo');
     let res = document.getElementById('res');
+    
     if (ini.value.length == 0 || fim.value.length == 0 || pas.value.length == 0){
         window.alert('Há campos vazios, favor conferir!');
     }else {
@@ -11,9 +12,16 @@ function Contar(){
         let i = Number(ini.value);
         let f = Number(fim.value);
         let p = Number(pas.value);
-        
-        for(let c=1; c<=f; c+=p){
-            res.innerHTML += `${c}`;
+        if( i < f){
+            for(let c = i; c <= f; c += p){
+                res.innerHTML += ` ${c} \u{27A1}`;
+            }
         }
+        else {
+            for(let c = i; c >= f; c -= p){
+                res.innerHTML += ` ${c} \u{27A1}`;
+            }
+        }
+        res.innerHTML += `\u{1F3C1}`
     }
 }
