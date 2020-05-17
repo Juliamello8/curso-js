@@ -2,16 +2,16 @@ function Gerar(){
     let num = document.getElementById('num');
     let res = document.getElementById('res');
 
-    if (num >= 0){
-        // for (let i = 0; i <= 10; i++){
-        //     let result = num * i; 
-        //     res.innerHTML = `${result}`;
-        // }
-        window.alert("Tudo ok!")
-    } else if (num < 0){
-        window.alert("Não é possível calcular número negativo!");
-    } else if (num == NaN || num == null){
-        window.alert("Favor preencher campo!");
+    if (num.value.length == 0){
+        window.alert("Por favor, digite um número!");
+    } else {
+        let n = Number(num.value)
+        let i = 1;
+        white (i <=10) {
+            let item = document.createElement('option');
+            item.text = `${num} * ${c} = ${num*c}`
+            tab.appent
+        }
     }
 
 }
