@@ -1,0 +1,11 @@
+Pós Curso-JS
+Estudar mais sobre funções:
+	arrow functions, callback, funções anonimas, iife's, java script funcional
+Objetos no JavaScript
+Modularização
+Reutilizar códigos usando JS
+Expressões regulares - RegEx
+JSON
+AJAX
+NodeJS(backend)
+
